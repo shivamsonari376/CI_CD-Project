@@ -6,7 +6,7 @@ GITHUB_REPO = "shivamsonari376/CI_CD-Project"
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 
 # Path to store the last commit hash
-COMMIT_HASH_FILE = "/var/www/html-project/last_commit.txt"
+COMMIT_HASH_FILE = "/var/log/last_commit.txt"
 
 def get_latest_commit():
     url = f"https://api.github.com/repos/{GITHUB_REPO}/commits"
