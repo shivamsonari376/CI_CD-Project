@@ -46,7 +46,7 @@ def deploy_code():
             if status_output:  # If there are unstaged changes
                 print("Unstaged changes found. Committing changes...")
                 os.system(f"cd {REPO_DIR} && git add .")
-                os.system(f"cd {REPO_DIR} && git commit -m 'Auto-commit before pull'")
+                os.system(f"cd {REPO_DIR} && git commit -m 'Auto-commit before pull'")  # Default commit message
                 print("Unstaged changes committed.")
 
             # Pull latest changes with merge
